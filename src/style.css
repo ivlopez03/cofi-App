@@ -108,11 +108,13 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
     padding: 0;
     overflow: hidden; 
     background-color: #101727;
+    text-align:center;
+    
 }
 
-.community-list li {	
+.community-list li {
+    display: inline-block;	
     border-radius: 6px;
-    float: left;
 }
 
 .community-list li a {
@@ -238,3 +240,4 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
     margin-right: auto;
     cursor: pointer;
 }
+
