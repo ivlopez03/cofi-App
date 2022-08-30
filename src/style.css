@@ -1,10 +1,10 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #101727;
+    background-color: #f8f8f2;
     margin: 0;
     padding: 0;
-    color: white;  
+    color: Black;  
 }
 
 
@@ -13,91 +13,120 @@ body{
     font-size: 13px;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 8px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #59cdf0ab;
+    background-color: white;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #6161614f;
+
+}
+.main-navbar img{
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.main-navbar p {
+    display: inline;
+    margin-left: 6px;
+    font-size: 30px;
+    font-weight:bolder;
+    position: relative;
+    top: -9px;
 }
 
-.main-navbar li {float: left;}
+#profile-container img {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#profile-container a {
+    margin-right: 55px;
+    position: relative;
+}
 
-.main-navbar li a {
+#your-communities-item img {
+    width: 24px;
+    height: 24px;
+    padding: 7px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+#your-communities-item img:hover {
+    background-color: #6c07fa6f;
+}
+
+.main-navbar li {float: right;
+margin-right: 10px;}
+
+#menu-navbar-item a {
     display: block;
-    color: #fff;
+    margin-left: 5px;
     text-align: center;
-    padding: 13px;
+    padding: 11px;
     text-decoration: none;
-}
-
-li:hover {background-color: rgba(0, 0, 0, 0.3);}
-
-.active {background-color: rgb(53, 53, 53); }
-
-.hello-header-intro {
-    font-size: 52px;
-    color: white;
-    margin-top: 85px;
-}
-
-.hello-header-intro .hello-container {
-    display: flex;
-    width: 455px;
-    height: 50px;
-    line-height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
-
-.hello-header-intro .hello-container ul {
-    list-style: none;
-    padding-left: 25px;
-    animation: cambiar 7s infinite;
-}
-.hello-header-intro .hello-container li { padding: 4px;}
-
-.hello-header-intro .hello-container ul,p { margin: 0;}
-
-@keyframes cambiar {
-    0% { margin-top: 0;}
-    20% { margin-top: 0;}
-    25% { margin-top: -50px;}
-    50% { margin-top: -50px;}
-    55% { margin-top: 0px;} 
-    80% { margin-top: 0px;}
-    85% { margin-top: -50px;}
-    95% { margin-top: -50px;}
-    100% { margin-top: 0px;}      
-}
-
-#create-community-btn{
-    color: rgb(255, 255, 255);
-    background-color: #59cdf0ab;
-    border-radius: 5px;
-    padding: 10px;
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color:#6c07fae1;
     cursor: pointer;
+    color: #6c07fae1;
+    font-weight: bolder;
 }
-#create-community-btn:hover {background:#b42fdde1;}
+
+#menu-navbar-item a:hover {
+    background-color:#6c07fae1;
+    color: white;
+
+}
+#create-navbar-item a {
+    display: block;
+    margin-left: 5px;
+    text-align: center;
+    padding: 11px;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color:#fa0760e1;
+    cursor: pointer;
+    color: #fa0760e1;
+    font-weight: bolder;
+}
+
+#create-navbar-item a:hover {
+    background-color:#fa0760e1;
+    color: white;
+
+}
 
 
 .community-container p{
+    padding: 2px 9px;
+    width: fit-content;
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.708);
     margin-left: 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
 }
 
 .community-container {
-    margin-top: 25px;
+    margin-top: 80px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #6161614f;
 }
 .community-list {
     font-size: 15px;
@@ -107,8 +136,8 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
     margin-right: auto;
     padding: 0;
     overflow: hidden; 
-    background-color: #101727;
     text-align:center;
+    margin-bottom: 17px;
     
 }
 
@@ -119,7 +148,6 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
 
 .community-list li a {
     display: block;
-    color: #fff;
     text-align: center;
     padding: 3px 15px;
     text-decoration: none;
@@ -135,13 +163,12 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
     display:block;
 
 }
-#type-textbox {color: white;}
+
 
 #textarea {
     display: none;
     margin-top: 10px;
-    background-color: #10172780;
-    color: white;
+    background-color: #ffffffbe;
     padding: 6px;
     border-radius: 5px;
     width: 100%;
@@ -152,7 +179,7 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
 
 .check {
 
-    background-color: #59cdf0ab;
+    background-color: #6c07fae1;
     padding: 3px;
     border-color: black;
     border-radius: 5px;
@@ -161,21 +188,20 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
     cursor: pointer;
 }
 
-.check:hover {background-color:#b42fdde1}
+.check:hover {background-color:#6c07fae1}
 
 #post-btn {
     display: none;
     margin-top: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
-    background-color: #b42fdd6b;
-    color: #fff;
+    background-color: #6c07fae1;
     padding: 5px 10px;
-    border-color: rgb(0, 0, 0);
     cursor: pointer;
     float: right;
+    color: white;
 }
-#post-btn:hover { background-color:#b42fdde1}
+
 
 
 
@@ -205,14 +231,17 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
 }
 
 .user-post {
-    color: white;
     padding: 3px;
-    background-color: #4242424f;
+    background-color: white;
     border-radius: 6px;
     margin-left: 8px;
     width: 90%;
     max-height: 40%;
     word-wrap: break-word;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #6161614f;
 }
 
 .user-post #username {padding-bottom: 2px;}
@@ -221,7 +250,7 @@ li:hover {background-color: rgba(0, 0, 0, 0.3);}
 
 .menu-reaction {
     display: flex;
-    background-color: #121317;
+    background-color: #f5f5f5;
     width: 100px;
     padding: 2px;
     border-radius: 8px;
