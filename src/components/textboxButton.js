@@ -10,6 +10,7 @@ function textboxOpen() {
     else {
         document.getElementById("textarea").style.display = "none";
         document.getElementById("post-btn").style.display = "none";
+        
 
     }
     
