@@ -59,7 +59,9 @@ body{
     margin-right: 10px;
 }
 #your-communities-item img:hover {
-    background-color: #6c07fa6f;
+    background-color:#ffffff ;
+   filter: invert(100%) opacity(90%) saturate(0%) drop-shadow(0 0 0 rgb(0, 0, 0));
+    
 }
 
 .main-navbar li {float: right;
